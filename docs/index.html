@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/foundation.css" />
+    <link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
   <script src="js/vendor/custom.modernizr.js"></script>
   <script src="js/jquery-latest.min.js"></script>
 
@@ -16,9 +17,9 @@
 #values { position:relative;font-size:400%;text-align:center;margin: 0 auto;z-index:0; }
 .name { overflow:hidden;display:block; }
 #names { display:none;padding:5px; }
-#namesbox { min-height:400px;font-size:32px;color:#333;resize:none;border:1px solid #F39C12; }
+#namesbox { min-height:400px;font-size:32px;color:black;resize:none;border:1px solid #F39C12; }
 .extra { font-size:16px;margin-top:20px; }
-#result1 { background:#000;color:#0c0606;padding:20px;z-index:10;margin-top:-150px; }
+#result1 { background:#000;color:white;padding:20px;z-index:10;margin-top:-150px; }
 body { background:#0c0606 url(img/bg-noise-IBL.png); }
 #varnote { font-size:40px;text-align:center;padding:30px; }
 .copyright { font-size:11px;font-family:Tahoma;color:#9B59B6; }
@@ -42,9 +43,9 @@ body { background:#0c0606 url(img/bg-noise-IBL.png); }
 
 	<div class="row">
 		<div class="large-12 columns">
-			<h3 style="text-align:center;margin-top:30px;" id="headline">Which one of you has the emperors favour?</h3>
+			<h3 style="text-align:center;margin-top:30px;color: white; font-family: 'StarJedi Special Edition'" id="headline">Which one of you has the emperors favour?</h3>
 			
-			<div id="varnote"><img src="img/full_logo.png"><div class="copyright">&copy; Coded by <strong>Heiswayi Nrird</strong>, June 2013</div></div>
+            <div id="varnote"><img src="img/full_logo.png"><div class="copyright">&copy; Coded by <strong>Heiswayi Nrird</strong>, June 2013 adapted by <strong>MapNex</strong> for the Imperial Black Legion</strong></div></div>
 			
       <div id="popdown">
       <div id="names" class="inbox"><textarea name="namesbox" id="namesbox"></textarea></div>
@@ -67,79 +68,15 @@ body { background:#0c0606 url(img/bg-noise-IBL.png); }
   
 <script>
 var text;
-var names = ['Barbara McFell',
-                      'Tempo McKeteketly',
-                      'Maonga Irpaae',
-                      'Jose Tunisia',
-                      'Bob Bobson',
-                      'Harold Greenoff',
-                      'Jeff Penn',
-                      'Ewan Freedom',
-                      'Benjamin Turkin',
-                      'Robert Harper',
-                      'Sally Cladwell',
-                      'Gregory Tomson',
-                      'Benita Dano',
-                      'Tameka Chea',
-                      'Fernando Guntrum',
-                      'Cody Devita',
-                      'Margery Moloney',
-                      'Jessie Wagar',
-                      'Jessie Burkhard',
-                      'Cody Lamotte',
-                      'Tabatha Cantley',
-                      'Hugh Fullwood',
-                      'Emilia Janusz',
-                      'Erik Taketa',
-                      'Lenore Laughter',
-                      'Kathrine Palazzo',
-                      'Lonnie Garron',
-                      'Tyrone Shott',
-                      'Gay Duble',
-                      'Pearlie Newberg',
-                      'Clinton Rayl',
-                      'Louisa Strey',
-                      'Saundra Ingenito',
-                      'Fernando Jenkin',
-                      'Maricela Tonkin',
-                      'Allie Borjas',
-                      'Clinton Rickenbacker',
-                      'Cody Golay',
-                      'Jerri Tienda',
-                      'Nita Pippen',
-                      'Alejandra Bonhomme',
-                      'Nelson Eguia',
-                      'Rae Velasques',
-                      'Boyce Edeker',
-                      'Cedrick Culotti',
-                      'Elenora Nagindas',
-                      'Arletta Miran',
-                      'Alica Knudsvig',
-                      'Von Ostroot',
-                      'Tomika Nuesca',
-                      'Felton Pattinson',
-                      'Cristopher Laper',
-                      'Shonna Parrotta',
-                      'Sarina Macurdy',
-                      'Waylon Companie',
-                      'Shon Carratura',
-                      'Jae Kneser',
-                      'Janett Papiernik',
-                      'Lynwood Bellar',
-                      'Jeramy Contopoulos',
-                      'Hong Nederostek',
-                      'Gigi Mccarn',
-                      'Sid Mursko',
-                      'Bielser',
-                      'Jospeh Lustberg',
-                      'Spring Luckinbill',
-                      'Ciera Chionchio',
-                      'Marleen Litchard',
-                      'Eldridge Brynga',
-                      'Leif Dinho',
-                      'Gigi Kornblatt',
-                      'Idell Chagollan',
-                      'Michale Mcclod'];
+var names = ['TK-1234',
+                      'TK-6542',
+                      'TK-8888',
+                      'TK-7589',
+                      'TK-5555',
+                      'TK-0098',
+                      'TK-5432',
+                      'TK-4321',
+                      'LT. Erso'];
 
 function reset(){
   // re-enable go button
@@ -151,79 +88,15 @@ function reset(){
     namesbreak = namesbreak.replace(/%20/g,' ');          
     }
     else   {
-      var names = ['Barbara McFell',
-                      'Tempo McKeteketly',
-                      'Maonga Irpaae',
-                      'Jose Tunisia',
-                      'Bob Bobson',
-                      'Harold Greenoff',
-                      'Jeff Penn',
-                      'Ewan Freedom',
-                      'Benjamin Turkin',
-                      'Robert Harper',
-                      'Sally Cladwell',
-                      'Gregory Tomson',
-                      'Benita Dano',
-                      'Tameka Chea',
-                      'Fernando Guntrum',
-                      'Cody Devita',
-                      'Margery Moloney',
-                      'Jessie Wagar',
-                      'Jessie Burkhard',
-                      'Cody Lamotte',
-                      'Tabatha Cantley',
-                      'Hugh Fullwood',
-                      'Emilia Janusz',
-                      'Erik Taketa',
-                      'Lenore Laughter',
-                      'Kathrine Palazzo',
-                      'Lonnie Garron',
-                      'Tyrone Shott',
-                      'Gay Duble',
-                      'Pearlie Newberg',
-                      'Clinton Rayl',
-                      'Louisa Strey',
-                      'Saundra Ingenito',
-                      'Fernando Jenkin',
-                      'Maricela Tonkin',
-                      'Allie Borjas',
-                      'Clinton Rickenbacker',
-                      'Cody Golay',
-                      'Jerri Tienda',
-                      'Nita Pippen',
-                      'Alejandra Bonhomme',
-                      'Nelson Eguia',
-                      'Rae Velasques',
-                      'Boyce Edeker',
-                      'Cedrick Culotti',
-                      'Elenora Nagindas',
-                      'Arletta Miran',
-                      'Alica Knudsvig',
-                      'Von Ostroot',
-                      'Tomika Nuesca',
-                      'Felton Pattinson',
-                      'Cristopher Laper',
-                      'Shonna Parrotta',
-                      'Sarina Macurdy',
-                      'Waylon Companie',
-                      'Shon Carratura',
-                      'Jae Kneser',
-                      'Janett Papiernik',
-                      'Lynwood Bellar',
-                      'Jeramy Contopoulos',
-                      'Hong Nederostek',
-                      'Gigi Mccarn',
-                      'Sid Mursko',
-                      'Bielser',
-                      'Jospeh Lustberg',
-                      'Spring Luckinbill',
-                      'Ciera Chionchio',
-                      'Marleen Litchard',
-                      'Eldridge Brynga',
-                      'Leif Dinho',
-                      'Gigi Kornblatt',
-                      'Idell Chagollan',
-                      'Michale Mcclod'];
+      var names = ['TK-1234',
+          'TK-6542',
+          'TK-8888',
+          'TK-7589',
+          'TK-5555',
+          'TK-0098',
+          'TK-5432',
+          'TK-4321',
+          'LT. Erso'];
     for(var i in names){
       name = names[i];
       if (name == "" || typeof(name) == undefined){}else{
@@ -258,7 +131,7 @@ function save(){
         savenames = $("#namesbox").val();
         savenames = savenames.replace(/\n\r?/g, '101');
         $('#headline').fadeOut();
-        $('#headline').text('The name list is saved and updated.').fadeIn();
+        $('#headline').text('The emperor now knows these names').fadeIn();
         $("#names").show();
         $('#namesbox').attr('disabled','disabled');
 }
@@ -348,7 +221,7 @@ function standout(text){
         $('#go').removeAttr('disabled','disabled');
         $('#list').removeAttr('disabled','disabled');
         $('#save').removeAttr('disabled','disabled');
-        $('#headline').text('Found the Winner!');
+        $('#headline').text('Found the Winner');
         $('#headline').slideDown();
 }
 
@@ -371,7 +244,7 @@ function removevictim(){
   });
   $("div").remove(".name");
   $("div").remove(".extra");
-  $('#headline').text('OK, done! Let\'s see who is next? Just click "GO!" button for next roll.');
+  $('#headline').text('Done. Let\'s see who the emperor picks next. click the green button for next roll.');
 }
 
 </script>
